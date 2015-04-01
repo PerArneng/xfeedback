@@ -1,0 +1,25 @@
+
+body {
+    background: black;
+    color: white;
+    font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#xfcanvas {
+    background: lightgrey;
+}
+
+.title {
+    display:block;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: small;
+    display:block;
+}
+
+canvas {
+    margin-top: 10px;
+}

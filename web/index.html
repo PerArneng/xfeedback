@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>XFeedbackDevice</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js" ></script>
+    <script src="js/XFeedbackDevice.js" ></script>
+    <script src="js/HexagonGeometry.js" ></script>
+
+</head>
+<body>
+
+    <span class="title">XFeedbackDevice 0.1</span>
+    <span class="subtitle">by Per Arneng</span>
+
+    <canvas class="canvas" id="xfcanvas" width="800" height="600">
+
+    </canvas>
+
+    <script>
+       var device = new XFeedbackDevice(document.getElementById("xfcanvas"));
+       device.start();
+    </script>
+
+</body>
+</html>
