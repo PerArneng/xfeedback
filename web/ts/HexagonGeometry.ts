@@ -16,7 +16,14 @@ class HexagonGeometry {
             new THREE.Vector2(h,   0.5)
         ];
 
-        return new THREE.ExtrudeGeometry(new THREE.Shape(points), {amount: 0.01});
+        var extrudeOptions = {
+        	amount: 0.2,
+        	bevelEnabled: true,
+        	bevelThickness: 0.02,
+        	steps: 10
+        };
+
+        return new THREE.ExtrudeGeometry(new THREE.Shape(points), extrudeOptions);
 
     }
 

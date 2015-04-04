@@ -18,8 +18,8 @@ class XFeedbackDevice {
 
         this.scene = new THREE.Scene();
 
-        this.camera = new THREE.PerspectiveCamera( 55, window.innerWidth/window.innerHeight, 0.1, 1000 );
-        this.camera.position.z = 15;
+        this.camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 1000 );
+        this.camera.position.z = 5;
 
         this.clock = new THREE.Clock();
 
@@ -38,6 +38,7 @@ class XFeedbackDevice {
 
         var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } );
         this.cube = new THREE.Mesh( geometry, material );
+        this.cube.rotation.x -= 0.685398163;
         this.scene.add(this.cube);
     }
 
@@ -46,7 +47,7 @@ class XFeedbackDevice {
         requestAnimationFrame(() => this.render());
 
         var delta = this.clock.getDelta();
-        this.cube.rotation.y += delta * 0.1;
+        this.cube.rotation.z += delta * 1;
 
         this.renderer.render(this.scene, this.camera);
     }
