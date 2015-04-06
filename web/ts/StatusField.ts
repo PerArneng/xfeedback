@@ -5,7 +5,7 @@ class StatusField {
 	indicators:StatusIndicator[] = [];
 
 	constructor() {
-		indicators.push(new StatusInidcator());
+		this.indicators.push(new StatusIndicator());
 	}
 
 
