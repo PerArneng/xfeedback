@@ -2,5 +2,7 @@
 
 class StatusIndicator {
 
+	mesh:THREE.Mesh;
+
 
 }
