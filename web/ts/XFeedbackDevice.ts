@@ -19,7 +19,7 @@ class XFeedbackDevice {
         this.scene = new THREE.Scene();
 
         this.camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 1000 );
-        this.camera.position.z = 5;
+        this.camera.position.z = 15;
 
         this.clock = new THREE.Clock();
 
@@ -38,7 +38,7 @@ class XFeedbackDevice {
 
         var material = new THREE.MeshPhongMaterial( { color: 0x00ff00 } );
         this.cube = new THREE.Mesh( geometry, material );
-        this.cube.rotation.x -= 0.685398163;
+        this.cube.rotation.x -= 0.785398163;
         this.scene.add(this.cube);
     }
 
