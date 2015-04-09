@@ -1,4 +1,5 @@
 
+/// <reference path="../lib/three-orbitcontrols.d.ts" />
 /// <reference path="../lib/three.d.ts" />
 
 class XFeedbackDevice {
@@ -10,6 +11,8 @@ class XFeedbackDevice {
 
     cube:THREE.Mesh;
     light:THREE.Light;
+
+    orbitControl:THREE.OrbitControls;
 
     constructor(canvas:HTMLCanvasElement) {
         this.renderer = new THREE.WebGLRenderer({antialias: true, canvas: canvas});
@@ -40,6 +43,8 @@ class XFeedbackDevice {
         this.cube = new THREE.Mesh( geometry, material );
         this.cube.rotation.x -= 0.785398163;
         this.scene.add(this.cube);
+
+        this.orbitControl = new THREE.OrbitControls(this.camera);
     }
 
 

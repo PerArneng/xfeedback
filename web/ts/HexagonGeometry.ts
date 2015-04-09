@@ -1,7 +1,7 @@
 /// <reference path="../lib/three.d.ts" />
 
 class HexagonGeometry {
-
+  
     static createGeometry(radius:number = 1, depth:number = 1) : THREE.Geometry {
 
         var angle = 1.7320508075688767
